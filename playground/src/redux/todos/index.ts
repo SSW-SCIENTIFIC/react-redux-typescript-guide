@@ -1,7 +1,7 @@
 // public API
-export * from './types';
-import * as todosActions from './actions';
-import * as todosSelectors from './selectors';
-export { todosActions, todosSelectors };
-export * from './reducer';
-// export * from './epics';
+import * as types from './types';
+import * as actions from './actions';
+import * as selectors from './selectors';
+// import * as epics from './epics';
+import reducer from './reducer';
+export { types, actions, selectors, reducer };

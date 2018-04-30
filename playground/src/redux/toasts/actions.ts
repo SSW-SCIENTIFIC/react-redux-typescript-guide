@@ -6,12 +6,12 @@ export type IToast = {
 };
 
 export const toastsActions = {
-  addToast: createAction('ADD_TOAST', (toast: IToast) => ({
-    type: 'ADD_TOAST',
+  addToast: createAction('toasts/ADD_TOAST', (toast: IToast) => ({
+    type: 'toasts/ADD_TOAST',
     payload: toast,
   })),
-  removeToast: createAction('REMOVE_TOAST', (id: string) => ({
-    type: 'REMOVE_TOAST',
+  removeToast: createAction('toasts/REMOVE_TOAST', (id: string) => ({
+    type: 'toasts/REMOVE_TOAST',
     payload: id,
   })),
 };
